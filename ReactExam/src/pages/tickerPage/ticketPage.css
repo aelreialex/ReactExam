@@ -1,0 +1,21 @@
+import { create } from 'zustand';
+import axios from 'axios'
+
+export const useInsults = create(set => ({
+    insults : [],
+    loading : false,
+    error: false,
+    addInsult : (insult, play) => 
+        set((state) => ({ insults : [...state.insults, { id : crypto.randomUUID() ,insult, play}]})),
+    removeInsult : (id) => set((state) => ({ insults : state.insults.filter( insult => insult.id !== id) })),
+    fetchInsults : () => {
+        set({ loading : true });
+        axios.get('https://santosnr6.github.io/Data/insults.json')
+            .then(response => {
+                console.log(response)
+                set({ insults : response.data, loading : false,});
+            }).catch(() => {
+                set({ error : true, loading : false });
+            })
+    }
+}));
