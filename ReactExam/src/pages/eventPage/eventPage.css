@@ -1,0 +1,17 @@
+.eventPage{
+    display:flex;
+    padding-top: 50px;
+    gap: 50px;
+    background-color: #231F42;
+    color: #F56B9A;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .eventPage__events{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        color: #FFFFFF;
+        gap: 20px;
+    }
+}
