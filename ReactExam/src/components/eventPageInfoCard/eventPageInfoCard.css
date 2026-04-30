@@ -1,0 +1,93 @@
+.eventInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+
+    .eventInfo__heading{
+        color: #F56B9A;
+        font-size: 2.5rem;
+    }
+
+    .eventInfo__slogan{
+        color: #FFFFFFCC;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .eventInfo__box{
+        text-align: center;
+
+        .eventInfo__band{
+            font-size: 2.5rem;
+            color: #F56B9A;
+        }
+
+        .eventInfo__date{
+            color: #37AEAB;
+            font-size: 1.2rem;
+        }
+
+        .eventInfo__where{
+            color: #FFFFFFB2;
+            font-size: 1.2rem;
+        }
+    }
+
+    .eventInfo__tickets{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 1px solid #F56B9A;
+        color: white;
+        margin-top: 50px;
+        font-size: 2rem;
+
+        .eventInfo__totalPrice{
+            display:flex;
+            grid-column: 1 / span 3;
+            justify-content: center;
+            align-items: center;
+            min-width: 250px;
+            min-height: 80px;
+            border-bottom: 1px solid #F56B9A;
+        }
+
+        .eventInfo__sub{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50px;
+        }
+
+        .eventInfo__howMany{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            min-height: 50px;
+            border-left: 1px solid #F56B9A;
+            border-right: 1px solid #F56B9A;
+        }
+
+        .eventInfo__add{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            min-height: 50px;
+        }
+    
+    }
+
+    .eventInfo__addButton{
+            min-width: 300px;
+            min-height: 60px;
+            color: white;
+            font-size: 1.3rem;
+            background-color: #37AEAB;
+            border: none;
+            border-radius: 3px;
+        }
+}

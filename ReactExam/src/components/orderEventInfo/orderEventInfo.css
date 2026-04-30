@@ -1,0 +1,69 @@
+.order__card{
+    border: 1px solid #F56B9A;
+    margin-bottom: 30px;
+    border-radius: 3px;
+
+    .order__info{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        min-width: 350px;
+        min-height: 70px;
+        border-bottom: 1px solid #F56B9A;
+        padding: 6px;
+
+        .order__bandName{
+            /* color: white;
+            text-shadow: 1px 1px #F56B9A; */
+            color: #F56B9A;
+            font-size: 2rem;
+        }
+
+        .order__playTime{
+            color: #37AEAB;
+            margin-left: auto;
+        }
+    }
+
+    .order__tickets{
+        display:grid;
+        grid-template-columns: repeat(7, 1fr);
+        color: white;
+        font-size: 1.7rem;
+
+        .order__sub{
+            display:flex;
+            background-color: #231F42;
+            color: white;
+            justify-content: center;
+            grid-column: 1 / span 2;
+            align-items: center;
+            min-height: 60px;
+            border: none;
+            border-radius: 3px;
+            font-size: 1.7rem;
+        }
+
+        .order__howMany{
+            display:flex;
+            justify-content: center;
+            grid-column: 3 / span 3;
+            align-items: center;
+            border-left: 1px solid #F56B9A;
+            border-right: 1px solid #F56B9A;
+        }
+
+        .order__add{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 6 / span 2;
+            border: none;
+            background-color: #231F42;
+            color: white;
+            border-radius: 3px;
+            font-size: 1.7rem;
+        }
+    }
+
+}

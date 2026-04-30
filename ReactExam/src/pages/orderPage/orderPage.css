@@ -1,0 +1,36 @@
+.order{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F56B9A;
+    margin-top: 30px;
+
+    .order__heading{
+        margin-bottom: 30px;
+    }
+
+    .order__total{
+        margin-bottom: 10px;
+        color: #FFFFFFB2;
+        font-size: 1.2rem;
+    }
+
+    .order__totalText{
+        font-size: 2rem;
+        color: white;
+        text-shadow: 1px 1px #F56B9A;
+        margin-bottom: 10px;
+    }
+
+    .order__button{
+            min-width: 500px;
+            min-height: 60px;
+            color: white;
+            font-size: 1.3rem;
+            background-color: #37AEAB;
+            border: none;
+            border-radius: 3px;
+            margin-top: 20px;
+    }
+}
