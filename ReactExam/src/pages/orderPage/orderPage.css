@@ -8,12 +8,21 @@
 
     .order__heading{
         margin-bottom: 30px;
+            font-family: "Sansita One";
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
     }
 
     .order__total{
         margin-bottom: 10px;
         color: #FFFFFFB2;
         font-size: 1.2rem;
+        font-family: "Fira Sans", sans-serif;
+        font-style: italic;
     }
 
     .order__totalText{
@@ -21,6 +30,7 @@
         color: white;
         text-shadow: 1px 1px #F56B9A;
         margin-bottom: 10px;
+        font-family: "Fira Sans", sans-serif;
     }
 
     .order__button{
@@ -32,5 +42,19 @@
             border: none;
             border-radius: 3px;
             margin-top: 20px;
+            margin-bottom: 40px;
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 600;
+            margin-bottom: 100px;
     }
 }
+
+@media (max-width: 600px) {
+    .order{
+    .order__button{
+            min-width: 300px;
+    }
+}
+}
+
+

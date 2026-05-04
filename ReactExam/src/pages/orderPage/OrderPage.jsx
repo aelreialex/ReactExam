@@ -6,6 +6,7 @@ import "./orderPage.css"
 import { motion } from 'motion/react';
 import { useNavigate } from "react-router-dom";
 
+
 const OrderPage = () => {
   const { addOneToCart, cart } = useCartStore();
   console.log(cart)

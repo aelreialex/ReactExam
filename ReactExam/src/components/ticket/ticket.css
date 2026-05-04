@@ -1,0 +1,183 @@
+.ticket{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    min-width: 300px;
+    font-family: "Fira Sans", sans-serif;
+
+    .ticket__topBox{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        border-bottom: 1px dashed #00000066;
+        height: 80px;
+
+        .ticket__textWhat{
+            color: #00000066;
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding-left: 15px;
+            padding-top: 5px;
+        }
+
+        .ticket__name{
+            font-size: 1.8rem;
+            color :#F56B9A;
+            font-family: Sansita One;
+            font-weight: 400;
+            line-height: 100%;
+            letter-spacing: 0%;
+            padding-bottom: 20px;
+            padding-left: 15px;
+
+        }
+
+        }
+
+    .ticket__secBox{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+        border-bottom: 1px dashed #00000066;
+        background-color: #00000008;
+
+        .ticket__textWhere{
+            color: #00000066;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding-left: 15px;
+            padding-top: 5px;
+        }
+
+        .ticket__where{
+           color: #000000B2;
+           font-weight: 600;
+           font-size: 1.2rem;
+           padding-left: 15px;
+           margin-top: 10px;
+           margin-bottom: 60px;
+        }
+    }
+
+    .ticket__date{
+        display:flex;
+        border-bottom: 1px dashed #00000066;
+        background-color: #0000000F;
+    
+        .ticket__textWhen{
+            display:flex;
+            flex-direction: column;
+            color: #00000066;
+            font-weight: 700;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: 15px;
+            padding-top: 10px;
+            width: 100px;
+            height: 50px;
+            border-right: 1px dashed #00000066;
+
+            .ticket__whenDate{
+                color: #00000099;
+                font-size: 1.1rem;
+                margin-top: 5px;
+                font-weight: 600;
+
+            }
+        }
+
+        .ticket__textFrom{
+            display:flex;
+            flex-direction: column;
+            color: #00000066;
+            font-weight: 700;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: 15px;
+            padding-top: 10px;
+            width: 100px;
+            height: 50px;
+            border-right: 1px dashed #00000066;
+
+            .ticket__whenFrom{
+                color: #00000099;
+                font-size: 1.1rem;
+                margin-top: 5px;
+                font-weight: 600;
+            }
+
+        }
+
+        .ticket__textTo{
+            display:flex;
+            flex-direction: column;
+            color: #00000066;
+            font-weight: 700;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: 15px;
+            padding-top: 10px;
+            width: 100px;
+            height: 50px;
+
+            .ticket__whenTo{
+                color: #00000099;
+                font-size: 1.1rem;
+                margin-top: 5px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .ticket__thirdBox{
+        display:flex;
+        flex-direction: column;
+        background-color: #00000017;
+        height: 60px;
+
+        .ticket__textInfo{
+            color: #00000066;
+            font-weight: 700;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: 15px;
+            padding-top: 10px;
+            width: 100px;
+            height: 50px;
+        }
+
+        .ticket__section{
+            margin-left: 15px;
+            margin-bottom: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #00000099
+        }
+    }
+
+    .ticket__code{
+        display:flex;
+        flex-direction:column;
+        height: 100px;
+        background-color: #0000001F;
+
+        .ticket__barCode{
+            font-family: 'Libre Barcode 39';
+            font-size: 5rem;
+            color: #000000CC;
+            text-align: center;
+            height: 50px;
+            margin-top: 20px;
+        }
+
+        .ticket__idCode{
+            text-align: center;
+            font-size: 0.8rem;
+            color: #00000066;
+            font-weight: 700;
+            letter-spacing: 20%;
+        }
+    }
+}

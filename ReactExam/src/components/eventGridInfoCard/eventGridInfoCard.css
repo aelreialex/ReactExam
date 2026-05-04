@@ -54,3 +54,36 @@
 
 
 }
+
+
+
+.eventInfoCard:hover{
+
+    .eventInfoCard__date{
+        border-color: #F56B9A;
+    }
+
+    .eventInfoCard__gig{
+
+        .eventInfoCard__time{
+            border-color: #F56B9A;
+            
+         }
+    }
+
+
+}
+
+@media (max-width: 600px) {
+.eventInfoCard{
+
+    .eventInfoCard__gig{
+
+        .eventInfoCard__band{
+            font-size: 1.7rem;
+            width: 180px;
+            
+        }
+    }
+}
+}

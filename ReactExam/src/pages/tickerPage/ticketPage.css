@@ -1,0 +1,21 @@
+.swiper {
+  width: 300px;
+  height: 100%;
+  margin-top: 150px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  background-color: none;
+  justify-content: center;
+  border-radius: 3px;
+  flex-direction: row;
+}
+
+.heading{
+  text-align: center;
+  margin-top: 20px;
+  color: #37AEAB
+}
+

@@ -19,8 +19,10 @@ const EventPageInfoCard = () => {
     const notify = () => toast.success('Biljetter har lagts till i din kundvagn!');
    
     function add(){
-        const test = count + 1;
-        return setCount(test)
+        if( count < 20){
+            const test = count + 1;
+            return setCount(test)
+        }
     }
 
     function sub(){
@@ -58,9 +60,9 @@ const EventPageInfoCard = () => {
             {/* bara en counter */}
             <div className="eventInfo__tickets">
                 <h2 className="eventInfo__totalPrice">{count * band.price} sek</h2>
-                <motion.p whileTap={{ scale: 0.75 }} transition={{ duration: 0.01 }} onClick={sub} className="eventInfo__sub">-</motion.p>
+                <motion.button alt="minus knapp" whileTap={{ scale: 0.75 }} transition={{ duration: 0.01 }} onClick={sub} className="eventInfo__sub">-</motion.button>
                 <p className="eventInfo__howMany">{count}</p>
-                <motion.p whileTap={{ scale: 0.75 }} transition={{ duration: 0.01 }} onClick={add} className="eventInfo__add">+</motion.p>
+                <motion.button alt="plus knapp" whileTap={{ scale: 0.75 }} transition={{ duration: 0.01 }} onClick={add} className="eventInfo__add">+</motion.button>
             </div>
             <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.95 }} onClick={ () => {if(count > 0) {{addToCart(band, count), setCount(0), console.log(cart), notify()}}}} className="eventInfo__addButton">Lägg i varukorgen</motion.button>
         </motion.main>
