@@ -2,6 +2,7 @@
     border: 1px solid #F56B9A;
     margin-bottom: 30px;
     border-radius: 3px;
+    font-family: "Fira Sans", sans-serif;
 
     .order__info{
         display:flex;
@@ -13,8 +14,12 @@
         padding: 6px;
 
         .order__bandName{
-            /* color: white;
-            text-shadow: 1px 1px #F56B9A; */
+            font-family: "Sansita One";
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 100%;
+            letter-spacing: 0%;
+
             color: #F56B9A;
             font-size: 2rem;
         }
@@ -66,4 +71,14 @@
         }
     }
 
+}
+
+@media (max-width: 600px) {
+    .order__card{
+
+    .order__info{
+        min-width: 300px;
+    }
+
+}
 }

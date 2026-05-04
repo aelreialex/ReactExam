@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useTickets } from '../../hooks/useStoreTickets';
 import EventGridInfoCard from '../../components/eventGridInfoCard/EventGridInfoCard';
 import "./eventPage.css"
+import SearchBar from '../../components/searchBar/SearchBar';
 
 const EventPage = () => {
     const bands = useTickets(state => state.fetchTickets);
@@ -20,6 +21,7 @@ const EventPage = () => {
   return (
     <main className="eventPage">
         <h1 className="eventPage__h1">Events</h1>
+        <SearchBar />
         <section className="eventPage__events">
           {tickets?.map(({name, when, id, where, price}) => (
               <EventGridInfoCard name={name} price={price} where={where} when={when.date} startWhen={when.from} endWhen={when.to} key={id} id={id}/>
