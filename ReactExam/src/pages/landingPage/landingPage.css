@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    padding-top: 100px;
     gap: 10px;
 
     .landingPage__logo{
@@ -25,22 +25,22 @@
         font-style: italic;
         font-weight: 400;
         text-shadow: 1px 1px black;
+        padding-bottom: 30px;
     }
 
 }
 
-@media (max-width: 700px){
+@media (max-width: 600px){
     .landingPage{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     gap: 10px;
 
     .landingPage__logo{
         width: 250px;
-        margin-top: 100px;
+        margin-top: 0px;
     }
 
     .landingPage__heading{

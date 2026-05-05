@@ -15,7 +15,11 @@
 
 .heading{
   text-align: center;
-  margin-top: 20px;
+  padding-top: 50px;
   color: #37AEAB
 }
 
+.tickets{
+  background: linear-gradient(180deg, #7459bd 0%, rgba(177, 52, 254, 0) 100%);
+  padding-top: 50px;
+}
