@@ -21,14 +21,14 @@ const OrderPage = () => {
 
   if(cart.length === 0){
     return (
-      <div className="emptyCart">
+      <main className="emptyCart">
         <h1 className="emptyCart__text">Din varukorg är tom!</h1>
         <FontAwesomeIcon onClick={ () => {navigate("/EventPage")}} className="emptyCart__icon" icon={faCartPlus} size="2xl" style={{color: "rgb(116, 192, 252)",}} />
-      </div>
+      </main>
     )
   } else 
       return (
-        <motion.div initial={{ scale: 0.95 }} animate={{ scale: 1 }} className="order">
+        <motion.main initial={{ scale: 0.95 }} animate={{ scale: 1 }} className="order">
           <h1 className="order__heading">Order</h1>
             {cart?.map(({name, when, id, where, price, quantity}) => (
               <OrderEventInfo quantity={quantity} name={name} price={price} where={where} when={when.date} startWhen={when.from} endWhen={when.to} key={id} id={id}/>
@@ -36,7 +36,7 @@ const OrderPage = () => {
           <p className="order__total">Totalt värde på order</p>
           <h3 className="order__totalText">{fullPrice} sek</h3>
           <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.95 }} onClick={ () => {navigate("/TicketPage")}} className="order__button">Skicka order</motion.button>
-        </motion.div>
+        </motion.main>
       )
 }
 

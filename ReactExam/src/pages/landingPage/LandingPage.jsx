@@ -17,12 +17,12 @@ const LandingPage = () => {
 
   return (
     <ChakraProvider value={defaultSystem}>
-    <div className="landingPage">
-      <img className="landingPage__logo" src={logo}></img>
-      <h1 className="landingPage__heading">Where it's @</h1>
-      <h2 className="landingPage__slogan">Ticketing made easy!</h2>
-      <Demo />
-    </div>
+      <main className="landingPage">
+        <img className="landingPage__logo" src={logo}></img>
+        <h1 className="landingPage__heading">Where it's @</h1>
+        <h2 className="landingPage__slogan">Ticketing made easy!</h2>
+        <Demo />
+      </main>
     </ChakraProvider>
   )
 }

@@ -34,20 +34,20 @@ const TicketPage = () => {
       });
       if (!finalTickets) return <div>laddar</div>
   return (
-    <div className="tickets">
-    <Swiper         
-        effect={'cards'}
-        grabCursor={true}
-        modules={[EffectCards]}
-        className="mySwiper">
-          
-      {finalTickets.map((ticket, index) => (
-        <SwiperSlide>
-          <Ticket id={ticket.id} where={ticket.where} seatNumber={ticket.seatNumber + 1} section={ticket.section} name={ticket.name} whenDate={ticket.when.date} whenFrom={ticket.when.from} whenTo={ticket.when.to}/>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-    </div>
+    <section className="tickets">
+      <Swiper         
+          effect={'cards'}
+          grabCursor={true}
+          modules={[EffectCards]}
+          className="mySwiper">
+            
+        {finalTickets.map((ticket, index) => (
+          <SwiperSlide>
+            <Ticket id={ticket.id} where={ticket.where} seatNumber={ticket.seatNumber + 1} section={ticket.section} name={ticket.name} whenDate={ticket.when.date} whenFrom={ticket.when.from} whenTo={ticket.when.to}/>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   )
 }
 
