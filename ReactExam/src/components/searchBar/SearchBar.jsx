@@ -4,7 +4,7 @@ import "./searchBar.css"
 const SearchBar = () => {
   return (
     <form>
-        <input className="test" type="text" />
+        <input aria-label="Sök på webbplatsen" className="test" type="text" />
     </form>
   )
 }

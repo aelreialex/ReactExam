@@ -34,8 +34,7 @@ const TicketPage = () => {
       });
       if (!finalTickets) return <div>laddar</div>
   return (
-    <div>
-    <h1 className="heading">Dina biljetter</h1>
+    <div className="tickets">
     <Swiper         
         effect={'cards'}
         grabCursor={true}

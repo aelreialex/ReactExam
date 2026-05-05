@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     color: #F56B9A;
-    margin-top: 30px;
+    padding-top: 50px;
 
     .order__heading{
         margin-bottom: 30px;
@@ -46,6 +46,28 @@
             font-family: "Fira Sans", sans-serif;
             font-weight: 600;
             margin-bottom: 100px;
+    }
+}
+
+.emptyCart{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
+    .emptyCart__text{
+        padding-bottom: 50px;
+         font-family: "Fira Sans", sans-serif;
+    }
+
+    .emptyCart__icon{
+        font-size: 3rem;
+    }
+
+    .emptyCart__icon:hover{
+        font-size: 3.5rem;
+        cursor: pointer;
     }
 }
 

@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    margin-top: 50px;
+    padding-top: 50px;
     font-family: "Fira Sans", sans-serif;
 
     .eventInfo__heading{
@@ -117,4 +117,28 @@
             border: none;
             border-radius: 3px;
         }
+}
+
+@media (max-width: 600px) and (max-height: 700px){
+    .eventInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 40px;
+        font-family: "Fira Sans", sans-serif;
+    }
+}
+
+@media (max-width: 600px) and (min-height: 800px){
+        .eventInfo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+            padding-top: 150px;
+            font-family: "Fira Sans", sans-serif;
+    }
 }
