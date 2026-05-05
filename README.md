@@ -20,5 +20,5 @@
 
 # Chakra UI
 ### För skojskull för att få ett laddningscirkel på första sidan
-## Tyckte min sida såg lite död ut i landingpagen så gjorde detta för att jag var uttråkad. Visar att det laddar på sidan så att man förstår att det inte är en still bild. 
-## Testade inte denna mycket mer en en lite laddningscirkel men om jag fattar det rätt är det allt från layout till componenter till styling av text. Verkar vara väldigt mycket som var gratis i denna jämfört med dem andra. Men gillade motion mer för att man satt motion direkt på elementen behövde ha en wrapper runt elementen med en provider som med chakra <chakraProvider>
+### Tyckte min sida såg lite död ut i landingpagen så gjorde detta för att jag var uttråkad. Visar att det laddar på sidan så att man förstår att det inte är en still bild. 
+### Testade inte denna mycket mer en en lite laddningscirkel men om jag fattar det rätt är det allt från layout till componenter till styling av text. Verkar vara väldigt mycket som var gratis i denna jämfört med dem andra. Men gillade motion mer för att man satt motion direkt på elementen behövde ha en wrapper runt elementen med en provider som med chakra <chakraProvider>
