@@ -10,12 +10,20 @@ function handleSinglePage() {
     navigate(`/EventInfoPage/${id}`, { replace: true });
 }
 
+// fick lite hjälp av ai inte men själva funktionen men hur fasen man gör för att kunna tabba och klicka enter på en article.
+
+const handleKeyDown = (event) => {
+  if (event.key === 'Enter') {
+    handleSinglePage();
+  }
+};
+
    const dates = when.split(' ')
    console.log(dates)
    const date = dates[1].substring(0, 3);
 
   return (
-    <motion.article initial={{ scale: 0.9 }} animate={{ scale: 1 }} whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.95 }} onClick={handleSinglePage} className="eventInfoCard">
+    <motion.article onKeyDown={handleKeyDown}  initial={{ scale: 0.9 }} animate={{ scale: 1 }} whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.95 }} onClick={handleSinglePage} className="eventInfoCard">
         <motion.section className="eventInfoCard__date">
             <p className="eventInfoCard__date-number">{dates[0]}</p>
             <p className="eventInfoCard__date-month">{date}</p>
