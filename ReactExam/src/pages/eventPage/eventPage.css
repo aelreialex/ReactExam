@@ -1,0 +1,49 @@
+.eventPage{
+    display:flex;
+    padding-top: 50px;
+    gap: 30px;
+    background-color: #231F42;
+    color: #F56B9A;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .eventPage__h1{
+    font-family: Sansita One;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+
+    }
+
+    .eventPage__events{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-family: "Fira Sans", sans-serif;
+        color: #FFFFFF;
+        gap: 20px;
+        margin-bottom: 100px;
+    }
+}
+
+
+@media (max-width: 1650px) {
+    .eventPage{
+
+    .eventPage__events{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+}
+
+@media (max-width: 1110px) {
+    .eventPage{
+
+    .eventPage__events{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+}

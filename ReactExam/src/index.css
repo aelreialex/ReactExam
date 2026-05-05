@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    /* background-color: #231F42; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #231F42;
+  color: white;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'SansitaOne';
+  src: url('./assets/fonts/SansitaOne.tff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

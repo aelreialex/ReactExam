@@ -1,0 +1,89 @@
+.eventInfoCard{
+    display:flex;
+    gap: 40px;
+
+    .eventInfoCard__date{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid white;
+        font-size: 1rem;
+        font-weight: 700;
+        height: 100px;
+        width: 100px;
+    }
+
+    .eventInfoCard__gig{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .eventInfoCard__band{
+            font-size: 2rem;
+            text-shadow: 1px 1px #F56B9A;
+            width: 350px;
+            
+        }
+
+        .eventInfoCard__time{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid gray;
+
+            .eventInfoCard__price{
+                color: #37AEAB
+            }
+        }
+    }
+}
+
+.eventInfoCard:hover{
+
+    .eventInfoCard__date{
+        border-color: #F56B9A;
+    }
+
+    .eventInfoCard__gig{
+
+        .eventInfoCard__time{
+            border-color: #F56B9A;
+            
+         }
+    }
+
+
+}
+
+
+
+.eventInfoCard:hover{
+
+    .eventInfoCard__date{
+        border-color: #F56B9A;
+    }
+
+    .eventInfoCard__gig{
+
+        .eventInfoCard__time{
+            border-color: #F56B9A;
+            
+         }
+    }
+
+
+}
+
+@media (max-width: 600px) {
+.eventInfoCard{
+
+    .eventInfoCard__gig{
+
+        .eventInfoCard__band{
+            font-size: 1.7rem;
+            width: 180px;
+            
+        }
+    }
+}
+}

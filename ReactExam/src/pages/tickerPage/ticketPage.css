@@ -1,0 +1,25 @@
+.swiper {
+  width: 300px;
+  height: 100%;
+  margin-top: 150px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  background-color: none;
+  justify-content: center;
+  border-radius: 3px;
+  flex-direction: row;
+}
+
+.heading{
+  text-align: center;
+  padding-top: 50px;
+  color: #37AEAB
+}
+
+.tickets{
+  background: linear-gradient(180deg, #7459bd 0%, rgba(177, 52, 254, 0) 100%);
+  padding-top: 50px;
+}
